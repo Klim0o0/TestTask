@@ -4,7 +4,6 @@ namespace GeometricCalculator.Figures;
 
 public class Triangle : IFigure
 {
-    private const double Tolerance = 0.00000001;
     public double A { get; }
     public double B { get; }
     public double C { get; }
@@ -40,9 +39,9 @@ public class Triangle : IFigure
         {
             if (_isRight == null)
             {
-                _isRight = Math.Abs(A * A - (B * B + C * C)) < Tolerance ||
-                           Math.Abs(B * B - (A * A + C * C)) < Tolerance ||
-                           Math.Abs(C * C - (B * B + A * A)) < Tolerance;
+                _isRight = Math.Abs(A * A - (B * B + C * C)) < Constants.Tolerance ||
+                           Math.Abs(B * B - (A * A + C * C)) < Constants.Tolerance ||
+                           Math.Abs(C * C - (B * B + A * A)) < Constants.Tolerance;
             }
 
             return _isRight.Value;
