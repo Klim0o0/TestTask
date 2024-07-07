@@ -1,4 +1,6 @@
-﻿namespace GeometricCalculator;
+﻿using GeometricCalculator.Figures;
+
+namespace GeometricCalculator;
 
 internal static class Utils
 {

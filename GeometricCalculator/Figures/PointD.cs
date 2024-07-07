@@ -1,4 +1,4 @@
-﻿namespace GeometricCalculator;
+﻿namespace GeometricCalculator.Figures;
 
 public class PointD
 {
